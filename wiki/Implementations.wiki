@@ -1,4 +1,4 @@
-#summary Known Full and Parital Implementations
+#summary Known Full and Partial Implementations
 
 = Introduction =
 
