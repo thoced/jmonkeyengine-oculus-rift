@@ -29,11 +29,21 @@ observer.addControl(stereoCamAppState.getCameraControl());
 rootNode.attachChild(observer);
 </code>
 
-Since revision 27, you now also need to initialize the rift in a static context:
-<code language="java">public static void main(String[] args) {
+~~Since revision 27, you now also need to initialize the rift in a static context:~~
+<code language="java">
+~~public static void main(String[] args) {~~
+~~OculusRiftReader.initialize();~~
+~~MyApp app = new MyApp();~~
+~~app.start();~~
+~~}~~
+</code>
+~~This has to happen before instantiating the application.~~
+~~This is NOT IDEAL and is likely to change in the future.~~
+
+This seems to be resolved in revision 34.
+Just remember to 
+3.
+<code language="java">
 OculusRiftReader.initialize();
-MyApp app = new MyApp();
-app.start();
-}</code>
-This has to happen before instantiating the application.
-This is NOT IDEAL and is likely to change in the future.
+</code>
+Before using it
