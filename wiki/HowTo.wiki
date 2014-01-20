@@ -41,9 +41,3 @@ app.start();
 ~~This is NOT IDEAL and is likely to change in the future.~~
 
 This seems to be resolved in revision 34.
-
-3. Just remember to 
-<code language="java">
-OculusRiftReader.initialize();
-</code>
-Before using it
