@@ -1,16 +1,12 @@
 #summary How to use this project
 
-= Introduction =
-
-
 = Details =
 
-Add the oculuslib.jar to the project.
+Add the oculus-natives.jar & JMonkeyOculusRift.jar to the project.
 
 Run TestStereoCam.java to see a full example of how to set up an application to use the oculus rift.
+
 TestGui shows gui in stereo (no code needed).
-
-
 
 Adding oculus rift support to your application.
 
