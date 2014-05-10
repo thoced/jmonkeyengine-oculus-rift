@@ -2,22 +2,22 @@
 
 = Details =
 
-Add the oculus-natives.jar & JMonkeyOculusRift.jar to the project.
-
-Run TestStereoCam.java to see a full example of how to set up an application to use the oculus rift.
+See TestStereoCam.java to see a full example of how to set up an application to use the oculus rift.
 
 TestGui shows gui in stereo (no code needed).
 
 Adding oculus rift support to your application:
 
-1. To simply get the stereo cams and barrel distortion (no controls):
+1. Add the oculus-natives.jar & JMonkeyOculusRift.jar to the project.
+
+2. To simply get the stereo cams and barrel distortion (no controls):
 
 <code language="java">
 StereoCamAppState stereoCamAppState = new StereoCamAppState();
 stateManager.attach(stereoCamAppState);
 </code>
 
-2. To add basic HMD sensing:
+3. To add basic HMD sensing:
 
 <code language="java">
 Spatial observer = new Node("Observer");
