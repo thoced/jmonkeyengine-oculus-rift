@@ -8,7 +8,7 @@ Run TestStereoCam.java to see a full example of how to set up an application to 
 
 TestGui shows gui in stereo (no code needed).
 
-Adding oculus rift support to your application.
+Adding oculus rift support to your application:
 
 1. To simply get the stereo cams and barrel distortion (no controls):
 
