@@ -28,7 +28,7 @@ rootNode.attachChild(observer);
 ~~Since revision 27, you now also need to initialize the rift in a static context:~~
 <code language="java">
 public static void main(String[] args) {
-OculusRiftReader.initialize();
+OculusRift.initialize();
 MyApp app = new MyApp();
 app.start();
 }
