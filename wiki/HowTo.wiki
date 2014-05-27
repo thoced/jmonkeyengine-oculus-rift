@@ -8,7 +8,7 @@ TestGui shows gui in stereo (no code needed).
 
 Adding oculus rift support to your application:
 
-1. Add the oculus-natives.jar & JMonkeyOculusRift.jar to the project.
+1. Add the latest jna-x.x.x, jovr-0.x.x.x & JMonkeyOculusRift.jar to the project.
 
 2. To simply get the stereo cams and barrel distortion (no controls):
 
