@@ -8,20 +8,20 @@ TestGui shows gui in stereo (no code needed).
 
 Adding oculus rift support to your application:
 
-1. Add the latest jna-x.x.x, jovr-0.x.x.x & JMonkeyOculusRift.jar to the project.
+1. Add the latest jna-x.x.x, jovr-0.x.x.x, guava-x.x.jar & JMonkeyOculusRift.jar to the project.
 
 2. To simply get the stereo cams and barrel distortion (no controls):
 
 <code language="java">
-StereoCamAppState stereoCamAppState = new StereoCamAppState();
-stateManager.attach(stereoCamAppState);
+OVRAppState ovrAppState = new OVRAppState();
+stateManager.attach(ovrAppState);
 </code>
 
 3. To add basic HMD sensing:
 
 <code language="java">
 Spatial observer = new Node("Observer");
-observer.addControl(stereoCamAppState.getCameraControl());
+observer.addControl(ovrAppState.getCameraControl());
 rootNode.attachChild(observer);
 </code>
 
