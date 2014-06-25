@@ -38,7 +38,7 @@ rootNode.attachChild(observer);
 
 = Using the GUI =
 
-The GUI system has two options: automatic & manual positioning. Automatic positioning will always keep the GUI elements floating infront of the view, while manual will let you set its position manually, where it will stay as the player moves their head. The default is manual positioning.
+The GUI system has two options: automatic & manual positioning. Automatic positioning will always keep the GUI elements floating infront of the view, while manual will let you center it manually, where it will stay as the player moves their head. The default is manual positioning.
 
 You can change options like so:
 
@@ -47,7 +47,7 @@ OculusRift.getAppState().getGuiNode().setPositioningMode(POSITIONING_MODE.AUTO);
 OculusRift.getAppState().getGuiNode().setGuiDistance(0.8f);
 </code>
 
-To set the GUI's position manually, where it will stay until another manual position update is called (as long as the positioning mode is set to MANUAL):
+To center the GUI's position manually, where it will stay until another manual position update is called (as long as the positioning mode is set to MANUAL):
 
 <code language="java">
 OculusRift.getAppState().getGuiNode().positionGui();
