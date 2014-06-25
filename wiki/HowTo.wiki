@@ -57,4 +57,4 @@ The OculusGuiNode will try and keep things in the "Translucent" render bucket. I
 
 It should be safe to have all of the children of the root OculusGuiNode also be OculusGuiNodes.
 
-The OculusGuiNode will operate as a normal node if the Oculus isn't initialized. For testing purposes without an Oculus Rift, you can call OculusRift.forceInitializeSuccess() to make everything (e.g. the OculusGuiNode) act like one was initialized successfully.
+The OculusGuiNode will operate as a normal node if an Oculus Rift isn't initialized. For testing purposes without an Oculus Rift, you can call OculusRift.forceInitializeSuccess() to make everything (e.g. the OculusGuiNode) act like one was initialized successfully.
