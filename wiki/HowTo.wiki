@@ -42,7 +42,8 @@ The GUI system has two options: automatic & manual positioning. Automatic positi
 
 You can change options like so:
 
-<code language="java">          OculusRift.getAppState().getGuiNode().setPositioningMode(POSITIONING_MODE.AUTO);
+<code language="java">
+OculusRift.getAppState().getGuiNode().setPositioningMode(POSITIONING_MODE.AUTO);
 OculusRift.getAppState().getGuiNode().setGuiDistance(0.8f);
 </code>
 
