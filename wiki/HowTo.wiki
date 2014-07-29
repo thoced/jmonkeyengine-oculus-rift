@@ -21,7 +21,7 @@ public static void main(String[] args) {
 }
 </code>
 
-3. Create the OVRAppState that will handle both views & pass the replaced OculusGuiNode as an argument:
+3. After your app.start() call in the rendering thread (e.g. inside simpleInitApp()), create the OVRAppState that will handle both views & pass the replaced OculusGuiNode as an argument:
 
 <code language="java">
 OVRAppState ovrAppState = new OVRAppState((OculusGuiNode)guiNode);
