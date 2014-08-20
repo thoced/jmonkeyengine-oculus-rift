@@ -38,7 +38,7 @@ rootNode.attachChild(observer);
 
 *PRO-TIP: Use anisotropic filtering! Textures will be very blurry otherwise!*
 
-*PRO-TIP #2: If you want to force maximum FOV, call OculusRiftUtil.useMaxEyeFov(true); before creating/initializing the OVRAppState.*
+*PRO-TIP #2: If you want to force maximum FOV, call OculusRiftUtil.useMaxEyeFov(true); before creating/initializing the OVRAppState (e.g. before step #3 above)*
 
 = Using the GUI =
 
