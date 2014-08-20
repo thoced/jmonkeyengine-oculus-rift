@@ -38,6 +38,8 @@ rootNode.attachChild(observer);
 
 *PRO-TIP: Use anisotropic filtering! Textures will be very blurry otherwise!*
 
+*PRO-TIP #2: If you want to force maximum FOV, call OculusRiftUtil.useMaxEyeFov(true); before creating/initializing the OVRAppState.*
+
 = Using the GUI =
 
 The GUI system has two options: automatic & manual positioning. Automatic positioning will always keep the GUI elements floating infront of the view, while manual will let you center it manually, where it will stay as the player moves their head. The default is manual positioning.
