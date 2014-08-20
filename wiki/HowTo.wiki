@@ -36,6 +36,8 @@ observer.addControl(ovrAppState.getCameraControl());
 rootNode.attachChild(observer);
 </code>
 
+*PRO-TIP: Use anisotropic filtering! Textures will be very blurry otherwise!*
+
 = Using the GUI =
 
 The GUI system has two options: automatic & manual positioning. Automatic positioning will always keep the GUI elements floating infront of the view, while manual will let you center it manually, where it will stay as the player moves their head. The default is manual positioning.
