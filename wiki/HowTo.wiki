@@ -22,7 +22,17 @@ public class Main extends OVRApplication {
     }
 }</code>
 
-3. To add basic HMD sensing:
+3. In your simpleInitApp() function, make sure you call super.simpleInitApp()!
+
+<code language="java">
+    @Override
+    public void simpleInitApp() {
+        super.simpleInitApp();
+        .....
+    }
+</code>
+
+4. To add basic HMD sensing:
 
 <code language="java">
 Spatial observer = new Node("Observer");
