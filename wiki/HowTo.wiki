@@ -2,33 +2,26 @@
 
 = Details =
 
-See TestStereoCam.java to see a full example of how to set up an application to use the Oculus Rift. Other test applications may be out of date.
+See TestOVRApplication.java to see a full example of how to set up an application to use the Oculus Rift. Other test applications may be out of date.
 
 Adding Oculus Rift support to your application:
 
 1. Add the latest jna-x.x.x, jovr-0.x.x.x, guava-x.x.jar & JMonkeyOculusRift.jar to the project.
 
-2. You need to initialize the Rift & replace the GUI node in a static context:
-<code language="java">
-public static void main(String[] args) {
-  MyApp app = new MyApp();
-
-  // these two lines below are important before app starts
-  OculusRift.initialize();
-  app.guiNode = new OculusGuiNode();
-
-  app.start();
-}
-</code>
-
-3. After your app.start() call in the rendering thread (e.g. inside simpleInitApp()), create the OVRAppState that will handle both views & pass the replaced OculusGuiNode as an argument:
+2. Instead of extending SimpleApplication for your Main class, extend OVRApplication. This sets up a few things including the special Oculus Rift GUI node. If you want to configure a few things, use the configureOVRApp function as follows (all those options default to "false").
 
 <code language="java">
-OVRAppState ovrAppState = new OVRAppState((OculusGuiNode)guiNode);
-stateManager.attach(ovrAppState);
-</code>
+public class Main extends OVRApplication {
+    
+    public static Main MyApp;
 
-4. To add basic HMD sensing:
+    public static void main(String[] args) {
+        MyApp = new Main();
+        MyApp.configureOVRApp(maxFov, flipEyes, forceOculus);
+        StartGame();
+    }</code>
+
+3. To add basic HMD sensing:
 
 <code language="java">
 Spatial observer = new Node("Observer");
@@ -37,8 +30,6 @@ rootNode.attachChild(observer);
 </code>
 
 *PRO-TIP: Use anisotropic filtering! Textures will be very blurry otherwise!*
-
-*PRO-TIP #2: If you want to force maximum FOV, call OculusRiftUtil.useMaxEyeFov(true); before creating/initializing the OVRAppState (e.g. before step #3 above)*
 
 = Using the GUI =
 
