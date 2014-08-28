@@ -36,7 +36,7 @@ public class Main extends OVRApplication {
 
 <code language="java">
 Spatial observer = new Node("Observer");
-observer.addControl(ovrAppState.getCameraControl());
+observer.addControl(MyApp.getOVRAppState().getCameraControl());
 rootNode.attachChild(observer);
 </code>
 
