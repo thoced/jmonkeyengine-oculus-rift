@@ -19,7 +19,8 @@ public class Main extends OVRApplication {
         MyApp = new Main();
         MyApp.configureOVRApp(maxFov, flipEyes, forceOculus);
         StartGame();
-    }</code>
+    }
+}</code>
 
 3. To add basic HMD sensing:
 
