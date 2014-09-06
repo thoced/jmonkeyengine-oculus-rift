@@ -1,8 +1,8 @@
 #summary How to use this project
 
-*I recommend using Phr00t's jMonkeyEngine build here: https://github.com/phr00t/jmonkeyengine (the main jME3 build may work, but Rift-specific changes will be made first on Phr00t's build)*
-
 = Details =
+
+*I recommend using Phr00t's jMonkeyEngine build here: https://github.com/phr00t/jmonkeyengine (the main jME3 build may work, but Rift-specific changes will be made first on Phr00t's build) -- you can just use the JAR/libs under the dist/ and lib/ folders*
 
 See TestOVRApplication.java to see a full example of how to set up an application to use the Oculus Rift. Other test applications may be out of date.
 
