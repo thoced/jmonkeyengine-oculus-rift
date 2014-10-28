@@ -19,7 +19,7 @@ public class Main extends OVRApplication {
 
     public static void main(String[] args) {
         MyApp = new Main();
-        MyApp.configureOVRApp(maxFov, flipEyes, forceOculus);
+        MyApp.preconfigureOVRApp(disableVignette, maxFov, flipEyes, forceOculus);
         StartGame();
     }
 }</code>
@@ -65,4 +65,4 @@ The OculusGuiNode will try and keep things in the "Translucent" render bucket. I
 
 It should be safe to have all of the children of the root OculusGuiNode also be OculusGuiNodes.
 
-The OculusGuiNode will operate as a normal node if an Oculus Rift isn't initialized. For testing purposes without an Oculus Rift, you can set forceOculus to "true" in the configureOVRApp(maxFov, flipEyes, forceOculus) call in step #2 above.
+The OculusGuiNode will operate as a normal node if an Oculus Rift isn't initialized. For testing purposes without an Oculus Rift, you can set forceOculus to "true" in the preconfigureOVRApp(disableVignette, maxFov, flipEyes, forceOculus) call in step #2 above.
